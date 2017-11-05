@@ -131,16 +131,6 @@ a {
     html {
         font-size: 20px;
     }
-    #phoneNav {
-        visibility: visible;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 9;
-    }
-    #navigationBar {
-        display: none;
-    }
 
     .common-width {
         min-width: 100%;
@@ -150,9 +140,6 @@ a {
 
 
 @media (min-width: 768px) and (max-width: 1199px){
-    #phoneNav {
-        display: none;
-    }
     .common-width {
         min-width: 100%;
         padding: 0;

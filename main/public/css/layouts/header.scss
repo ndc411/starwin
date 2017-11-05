@@ -57,3 +57,63 @@
   color: $btn-hover-text;
   outline: none;
 }
+
+@media screen and (max-width: 767px) {
+  .header-wrap {
+    height: auto;
+    background: rgba(45,45,53, 0.8);
+  }
+
+  .login-wrap {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid $color-65;
+  }
+
+  #navigationBar {
+    display: none;
+  }
+
+  #phoneNav {
+    visibility: visible;
+    z-index: 9;
+    position: relative;
+    padding: 20px 15px 0;
+  }
+
+  .show-menu {
+    color: #fff;
+    float: right;
+    padding-right: 15px;
+  }
+
+  .nav-wrap {
+    position: absolute;
+    background-color: rgba(45,45,53, 0.8);
+    width: 100%;
+    margin: -6px -15px 0;
+    height: 700px;
+  }
+
+  .link-wrap {
+    margin-left: auto;
+    padding-top: 80px;
+  }
+
+  .link-wrap li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .link-wrap li a {
+    display: block;
+    border-top: 1px solid $color-65;
+    line-height: 60px;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+
+  .link-wrap li a:hover {
+    color: $normal-color;
+  }
+}
