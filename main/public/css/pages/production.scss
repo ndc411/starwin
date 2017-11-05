@@ -1,0 +1,154 @@
+@import "../styles/variables";
+.production-banner {
+  height: 400px;
+  background: url("../../images/production/production_banner.jpg") center no-repeat;
+}
+
+.production-types-wrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 950px;
+  min-width: 950px;
+  margin-top: -50px;
+  box-shadow: 0 0 24px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  background: #fff;
+  z-index: 2;
+  height: 142px;
+}
+
+.type-wrap {
+  width: 100px;
+  height: 80px;
+  img {
+    display: block;
+    margin: 0 auto 18px;
+  }
+  div {
+    font-size: 16px;
+    color: $color-99;
+  }
+}
+
+.del-line {
+  height: 2px;
+  background: url("../../images/production/dec_line.png") center no-repeat;
+}
+
+.content-wrap {
+  height: 520px;
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  //border-bottom: 1px solid #c0c0c0;
+}
+
+.odd-type-wrap, .even-type-wrap {
+  .sub-title {
+    font-size: 20px;
+    margin: 30px 0 18px;
+    color: $color-33;
+  }
+
+  .para {
+    width: 382px;
+    font-size: 16px;
+    line-height: 190%;
+    color: #666;
+    text-align: justify;
+  }
+}
+
+.odd-type-wrap {
+  margin-left: 80px;
+}
+
+.even-type-wrap {
+  margin-right: 90px;
+  text-align: right;
+  padding-left: 100px;
+  .para {
+    text-align: left;
+  }
+}
+
+
+//手机
+@media screen and (max-width: 767px) {
+  .production-types-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: -100px;
+    height: auto;
+  }
+
+  .type-wrap {
+    padding: 0 15px 10px;
+    margin-bottom: 20px;
+    img {
+      display: block;
+      margin: 0 auto 18px;
+      width: 40px;
+    }
+  }
+
+  .del-line {
+    height: 2px;
+    background: url("../../images/production/dec_line.png") center no-repeat;
+  }
+
+  .content-wrap {
+    padding: 0 15px;
+    img {
+      margin: 0 auto;
+      width: calc(100% - 30px);
+    }
+    img:nth-child(even) {
+      order: 1;
+    }
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .odd-type-wrap, .even-type-wrap {
+    margin: 0 auto 20px;
+    .sub-title {
+      font-size: 20px;
+      margin: 15px 0 9px;
+      color: $color-33;
+    }
+    
+    img {
+      display: none;
+    }
+
+    .para {
+      width: auto;
+      font-size: 16px;
+      line-height: 150%;
+      color: #666;
+      text-align: justify;
+    }
+  }
+
+  .even-type-wrap {
+    order: 2;
+    text-align: left;
+    padding-left: 0;
+    .para {
+      text-align: left;
+    }
+  }
+}
+

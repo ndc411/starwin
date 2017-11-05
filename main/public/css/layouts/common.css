@@ -1,0 +1,174 @@
+body {
+    font-family: -apple-system,"PingFang SC",
+    BlinkMacSystemFont,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif,
+    "Hiragino Sans GB","Microsoft YaHei","Wenquanyi Micro Hei",
+    "WenQuanYi Micro Hei Mono","WenQuanYi Zen Hei","WenQuanYi Zen Hei","Apple LiGothic Medium",SimHei,
+    "ST Heiti","WenQuanYi Zen Hei Sharp";
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.common-wrap {
+    text-align: center;
+}
+
+.common-width {
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    box-sizing:border-box;
+    min-width: 1180px;
+    max-width: 1280px;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.align-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.height-80 {
+    height: 80px;
+}
+
+.bot-arrow-wrap {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 40px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.margin-bot-70 {
+    margin-bottom: 70px;
+}
+
+.margin-bot-80 {
+    margin-bottom: 80px;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
+
+.padding-bottom-40 {
+    padding-bottom: 30px;
+
+}
+
+.padding-top-50 {
+    padding-top: 50px;
+}
+
+.padding-top-90 {
+    padding-top: 90px;
+}
+
+.padding-top-120 {
+    padding-top: 120px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    /*导航条*/
+    html {
+        font-size: 20px;
+    }
+    #phoneNav {
+        visibility: visible;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 9;
+    }
+    #navigationBar {
+        display: none;
+    }
+
+    .common-width {
+        min-width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px){
+    #phoneNav {
+        display: none;
+    }
+    .common-width {
+        min-width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #phoneNav {
+        display: none;
+    }
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+        padding: 0 50px;
+        position: relative;
+        min-width: 1180px;
+        box-sizing:border-box;
+    }
+}

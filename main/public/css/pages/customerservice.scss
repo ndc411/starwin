@@ -1,0 +1,140 @@
+@import "../styles/variables";
+
+.service-banner {
+  width: 100%;
+  height: 1048px;
+  background: url("../../images/customerservice/service_banner.jpg") center no-repeat;
+}
+
+.customer-content {
+  padding: 0 74px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+
+.sub-title {
+  line-height: 100%;
+  font-size: 14px;
+  color: $color-99;
+  margin-bottom: 80px;
+}
+
+.about-line {
+  width: 38px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $normal-color;
+}
+
+.content {
+  font-size: 16px;
+  color: $color-33;
+  line-height: 195%;
+}
+
+.images-wrap-line {
+  margin-bottom: 40px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.img-wrap {
+  display: inline-block;
+  width: 230px;
+  height: 234px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: rgba(136,136,136,0.1);
+  border: 2px solid rgba(255,255,255,0.1);
+  //box-shadow: 0 3px 21px rgba( 0, 0, 0,0.2);
+  //background: url("../../images/customerservice/box_wrap.png") center no-repeat;
+}
+
+.img-wrap:hover {
+  background-color: rgba(255,255,255,0.1);
+  //background: url("../../images/customerservice/box_hover.png") center no-repeat;
+}
+
+.img-wrap img {
+  display: block;
+  margin: 44px auto 24px;
+}
+
+.second-img {
+  margin: 0 26px;
+}
+
+.third-img {
+  margin-right: 26px;
+}
+
+
+//手机
+@media screen and (max-width: 767px) {
+
+  .service-banner {
+    width: 100%;
+    height: auto;
+    background: url("../../images/customerservice/service_banner.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .customer-content {
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  .sub-title {
+    margin-bottom: 40px;
+  }
+
+  .about-line {
+    padding-bottom: 10px;
+  }
+
+  .images-wrap-line {
+    margin-bottom: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .img-wrap {
+    display: inline-block;
+    width: 230px;
+    height: 234px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgba(136,136,136,0.1);
+    border: 2px solid rgba(255,255,255,0.1);
+  }
+
+  .second-img {
+    margin: 0 0;
+  }
+
+  .third-img {
+    margin-right: 0;
+  }
+
+}

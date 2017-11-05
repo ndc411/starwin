@@ -1,0 +1,86 @@
+@import "../styles/variables";
+.about-banner {
+  height: 400px;
+  background: url("../../images/about/about_banner.jpg") center no-repeat;
+}
+
+.about-content {
+  padding: 54px 160px 110px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 100%;
+  color: $color-33;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  line-height: 100%;
+  font-size: 14px;
+  color: $color-99;
+  margin-bottom: 40px;
+}
+
+.about-line {
+  width: 38px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $normal-color;
+}
+
+.content {
+  font-size: 16px;
+  color: $color-33;
+  line-height: 195%;
+}
+
+
+
+//手机
+@media screen and (max-width: 767px) {
+
+  .about-content {
+    padding: 27px 15px 55px;
+    text-align: center;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .sub-title {
+    margin-bottom: 20px;
+  }
+
+  .about-line {
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+
+}
+
+
+//iPad
+@media (min-width: 768px) and (max-width: 1199px){
+  #phoneNav {
+    display: none;
+  }
+  .common-width {
+    min-width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #phoneNav {
+    display: none;
+  }
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    min-width: 1180px;
+    box-sizing:border-box;
+  }
+}

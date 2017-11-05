@@ -1,0 +1,143 @@
+@import "../styles/variables";
+.transaction-banner {
+  height: 750px;
+  background: url("../../images/transaction/transaction_banner.jpg") center no-repeat;
+}
+
+.bg-f2 {
+  background: #f6f6f6;
+}
+
+.flags-wrap {
+  padding: 87px 100px 66px;
+  img:nth-child(2) {
+    display: inline-block;
+    margin: 0 98px;
+  }
+  .sub-title {
+    font-size: 30px;
+    line-height: 100%;
+    color: #272727;
+    margin: 58px 0 24px;
+  }
+  
+  .sub-para {
+    font-size: 18px;
+    line-height: 100%;
+    color: #656565;
+  }
+}
+
+.transaction-content {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  padding: 0 115px;
+}
+
+.odd-wrap , .even-wrap {
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+    color: $color-27;
+  }
+
+  .para {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-27;
+  }
+}
+
+.odd-wrap {
+  img{
+    margin-left: auto;
+  }
+}
+
+.even-wrap {
+  .text-wrap {
+    margin-left: auto;
+  }
+}
+
+
+//手机
+@media screen and (max-width: 767px) {
+  .transaction-banner {
+    height: 400px;
+    background: url("../../images/transaction/transaction_banner.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-f2 {
+    background: #f6f6f6;
+  }
+
+  .flags-wrap {
+    padding: 40px 15px 33px;
+    img {
+      width: 30%;
+    }
+    img:nth-child(2) {
+      display: inline-block;
+      margin: 0 auto;
+    }
+    .sub-title {
+      font-size: 26px;
+      line-height: 100%;
+      color: #272727;
+      margin: 29px 0 12px;
+    }
+
+    .sub-para {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  .transaction-content {
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+
+  .odd-wrap , .even-wrap {
+    margin: 30px auto;
+    .title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .para {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 26px;
+      color: $color-27;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .odd-wrap {
+    img{
+      margin-left: auto;
+    }
+  }
+
+  .even-wrap {
+    .text-wrap {
+      margin-left: auto;
+    }
+
+    img {
+      order: 3;
+    }
+  }
+}

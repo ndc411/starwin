@@ -1,0 +1,98 @@
+@import "../styles/variables";
+.contact-us-banner {
+  height: 400px;
+  background: url("../../images/contactus/contact_us_banner.jpg") center no-repeat;
+}
+
+.contact-content {
+  padding-top: 43px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 100%;
+  color: $color-33;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  line-height: 100%;
+  font-size: 14px;
+  color: $color-99;
+}
+
+.line-hr {
+  border-bottom: 1px solid #e3e3e3;
+  margin: 20px 0 40px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.contact-info-wrap {
+  font-size: 16px;
+  color: $color-33;
+  line-height: 195%;
+  margin-left: 90px;
+}
+
+.phone {
+  padding-left: 38px;
+  background: url("../../images/contactus/phone.png") left no-repeat;
+}
+
+.mail {
+  margin: 26px 0;
+  padding-left: 38px;
+  background: url("../../images/contactus/mail.png") left no-repeat;
+}
+
+.address {
+  padding-left: 38px;
+  background: url("../../images/contactus/add.png") left no-repeat;
+}
+
+
+//手机
+@media screen and (max-width: 767px) {
+  .contact-us-banner {
+    height: 300px;
+  }
+
+  .contact-content {
+    padding: 22px 15px 0;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .line-hr {
+    margin: 10px 0 20px;
+  }
+
+  .content {
+    align-items: center;
+    margin-bottom: 60px;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact-info-wrap {
+    font-size: 16px;
+    color: $color-33;
+    line-height: 195%;
+    margin: 20px 0 0;
+  }
+
+  .mail {
+    margin: 12px 0;
+  }
+
+}

@@ -1,0 +1,109 @@
+@import "../styles/_variables.scss";
+
+.footer-wrap {
+  background-color: #2b2b37;
+  padding-top: 30px;
+  height: 120px;
+}
+
+.gray-logo-wrap {
+  height: 44px;
+  width: 215px;
+  background: url("../../images/common/gray_logo.png") center no-repeat;
+}
+
+.company-info-wrap {
+  margin: 0 74px 0 18px;
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.company-info-wrap p {
+  color: #6d6c7a;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+.other-info {
+  font-size: 16px;
+  color: #6d6c7a;
+  margin-left: auto;
+}
+
+.wechat-sina-f-wrap {
+  margin-left: 16px;
+  margin-top: auto;
+}
+
+.wechat, .sina, .facebook {
+  height: 40px;
+  width: 40px;
+  margin-left: 14px;
+  margin-top: auto;
+}
+
+.facebook {
+  background: url("../../images/common/facebook.png") center no-repeat;
+}
+
+.sina {
+  background: url("../../images/common/sina.png") center no-repeat;
+}
+
+.wechat {
+  background: url("../../images/common/wechat.png") center no-repeat;
+}
+
+//手机
+@media screen and (max-width: 767px) {
+  .footer-wrap {
+    padding-top: 15px;
+    height: auto;
+    .align-top {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .gray-logo-wrap {
+    display: none !important;
+  }
+
+  .company-info-wrap {
+    margin: 0 auto;
+    font-size: 14px;
+    padding-top: 4px;
+    text-align: center;
+    display: block;
+    order: 3;
+  }
+
+  .other-info {
+    order: 1;
+    font-size: 16px;
+    color: #6d6c7a;
+    margin: 15px auto;
+    text-align: left
+  }
+
+  .wechat-sina-f-wrap {
+    margin: 0 auto 15px;
+    order: 2;
+  }
+
+  .wechat, .sina, .facebook {
+    height: 40px;
+    width: 40px;
+    margin-left: 14px;
+    margin-top: auto;
+  }
+}
+
+//iPad
+@media (min-width: 768px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 1200px) {
+
+}

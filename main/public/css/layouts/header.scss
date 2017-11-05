@@ -1,0 +1,59 @@
+@import "../styles/_variables.scss";
+.header-wrap {
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  background-color: #2b2b37;
+  z-index: 9000;
+}
+
+.logo-wrap {
+  height: 45px;
+  width: 183px;
+  background: url("../../images/common/logo.png") center no-repeat;
+}
+
+.link-wrap {
+  margin-left: 110px;
+}
+
+.link-wrap li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.home-link, .about-link, .production-link, .customerservice-link, .contactus-link, .transaction-link {
+  color: #838592;
+  font-size: 18px;
+}
+
+.link-wrap li a:hover {
+  color: $normal-color;
+}
+
+.active-link {
+  color: $normal-color;
+}
+
+.login-wrap {
+  border-left: 1px solid #4a4b56;
+  height: 80px;
+}
+
+.login-btn {
+  color: $normal-color;
+  font-size: 18px;
+  background-color: transparent;
+  margin-left: 30px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  border: 1px solid $btn-border;
+  outline: none;
+}
+
+.login-btn:hover {
+  color: $btn-hover-text;
+  outline: none;
+}
